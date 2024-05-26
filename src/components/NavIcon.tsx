@@ -4,10 +4,24 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { navIcons, pointer } from './styles/navigationStyle'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 const NavIcon = () => {
   const [isProfileOpen, setIsProfileOpen] = useState(false)
   const [isCartOpen, setIsCartOpen] = useState(false)
+
+  const router = useRouter()
+
+  //TEMPORARY
+  const isLoggedIn = false
+
+  const handleProfile = () => {
+    if (!isLoggedIn) {
+      router.push('/login')
+    }
+    setIsProfileOpen((prev) => !prev)
+  }
+
   return (
     <div className={navIcons}>
       <Image
