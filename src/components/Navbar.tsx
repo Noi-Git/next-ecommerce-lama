@@ -6,6 +6,7 @@ import {
   navbarMobile,
   textLogo,
   logo,
+  leftMenuXl,
 } from '@/components/styles/navigationStyle'
 import Link from 'next/link'
 import Menu from './Menu'
@@ -32,6 +33,13 @@ const Navbar = () => {
             <Image src='/face.png' alt='face' width={35} height={35} />
             <div className={textLogo}>NOI</div>
           </Link>
+          <div className={leftMenuXl}>
+            <Link href='/'>Homepage</Link>
+            <Link href='/'>Shop</Link>
+            <Link href='/'>Deals</Link>
+            <Link href='/'>About</Link>
+            <Link href='/'>Contact</Link>
+          </div>
         </div>
         {/* RIGHT */}
         <div className={menuRight}>

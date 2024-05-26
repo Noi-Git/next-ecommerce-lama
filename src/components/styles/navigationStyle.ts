@@ -8,9 +8,10 @@ export const menu =
 export const navMenuContainer =
   'hidden md:flex items-center justify-between gap-8 h-full'
 
-export const menuLeft = 'w-1/3'
+export const menuLeft = 'w-1/3 xl:w-1/2'
 
-export const menuRight = 'w-2/3 flex items-center justify-between gap-4'
+export const menuRight =
+  'w-2/3 xl:w-1/2 flex items-center justify-between gap-4'
 
 export const textLogo = 'text-2xl tracking-wide'
 
@@ -32,3 +33,5 @@ export const cartWrapper = 'relative cursor-pointer'
 
 export const cartCount =
   'absolute -top-4 -right-4 w-6 h-6 bg-pink rounded-full text-white text-sm flex items-center justify-center'
+
+export const leftMenuXl = 'hidden xl:flex gap-4'
