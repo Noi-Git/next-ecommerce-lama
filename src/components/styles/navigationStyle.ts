@@ -10,7 +10,7 @@ export const navMenuContainer =
 
 export const menuLeft = 'w-1/3'
 
-export const menuRight = 'w-2/3 flex items-center justify-between gap-0'
+export const menuRight = 'w-2/3 flex items-center justify-between gap-4'
 
 export const textLogo = 'text-2xl tracking-wide'
 
@@ -22,3 +22,5 @@ export const searchForm =
   'flex items-center justify-between gap-4 bg-gray-100 p-2 rounded-md flex-1'
 
 export const searchInput = 'flex-1 bg-transparent outline-none py-1'
+
+export const navIcons = 'flex items-center gap-4 xl:gap-6'
