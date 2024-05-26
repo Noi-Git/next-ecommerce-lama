@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React, { useState } from 'react'
-import { navIcons, pointer } from './styles/navigationStyle'
+import { navIcons, pointer, profile } from './styles/navigationStyle'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 
@@ -30,10 +30,11 @@ const NavIcon = () => {
         width={22}
         height={22}
         className={pointer}
+        onClick={handleProfile}
       />
 
       {isProfileOpen && (
-        <div>
+        <div className={profile}>
           <Link href='/'>Profile</Link>
           <div className='mt-2 cursor-pointer'>Logout</div>
         </div>
