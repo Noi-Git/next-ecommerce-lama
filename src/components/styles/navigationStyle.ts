@@ -27,3 +27,8 @@ export const navIcons = 'flex items-center gap-4 xl:gap-6 relative'
 
 export const profile =
   'absolute p-4 rounded-md top-12 left-0 text-sm shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-20'
+
+export const cartWrapper = 'relative cursor-pointer'
+
+export const cartCount =
+  'absolute -top-4 -right-4 w-6 h-6 bg-pink rounded-full text-white text-sm flex items-center justify-center'

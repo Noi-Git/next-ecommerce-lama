@@ -2,9 +2,16 @@
 
 import Image from 'next/image'
 import React, { useState } from 'react'
-import { navIcons, pointer, profile } from './styles/navigationStyle'
+import {
+  cartCount,
+  cartWrapper,
+  navIcons,
+  pointer,
+  profile,
+} from './styles/navigationStyle'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import CartModal from './CartModal'
 
 const NavIcon = () => {
   const [isProfileOpen, setIsProfileOpen] = useState(false)
@@ -47,13 +54,22 @@ const NavIcon = () => {
         height={22}
         className={pointer}
       />
-      <Image
-        src='/cart.png'
-        alt='profile'
-        width={22}
-        height={22}
-        className={pointer}
-      />
+      <div className={cartWrapper}>
+        <Image
+          src='/cart.png'
+          alt='profile'
+          width={22}
+          height={22}
+          className={pointer}
+          onClick={() => setIsCartOpen((prev) => !prev)}
+        />
+        <div className={cartCount}>2</div>
+      </div>
+
+      {isCartOpen && (
+        // create a seperate component
+        <CartModal />
+      )}
     </div>
   )
 }
