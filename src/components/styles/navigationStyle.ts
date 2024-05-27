@@ -13,7 +13,7 @@ export const menuLeft = 'w-1/3 xl:w-1/2 flex items-center gap-12'
 export const menuRight =
   'w-2/3 xl:w-1/2 flex items-center justify-between gap-4'
 
-export const textLogo = 'text-2xl tracking-wide'
+export const textLogo = 'text-2xl tracking-wide text-pink pt-4 -ml-4'
 
 export const pointer = 'cursor-pointer'
 

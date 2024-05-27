@@ -20,7 +20,8 @@ const Navbar = () => {
       {/* MOBILE */}
       <div className={navbarMobile}>
         <Link href='/'>
-          <div className={textLogo}>NOI</div>
+          <Image src='/heart.png' alt='face' width={45} height={45} />
+          <div className={textLogo}>Noi</div>
         </Link>
         <Menu />
       </div>
@@ -30,8 +31,9 @@ const Navbar = () => {
         {/* LEFT */}
         <div className={menuLeft}>
           <Link href='/' className={logo}>
-            <Image src='/face.png' alt='face' width={35} height={35} />
-            <div className={textLogo}>NOI</div>
+            <Image src='/heart.png' alt='face' width={45} height={45} />
+            {/* <Image src='/face-icon.svg' alt='face' width={35} height={35} /> */}
+            <div className={textLogo}>Noi</div>
           </Link>
           <div className={leftMenuXl}>
             <Link href='/'>Homepage</Link>
