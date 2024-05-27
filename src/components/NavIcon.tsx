@@ -7,7 +7,7 @@ import {
   cartWrapper,
   navIcons,
   pointer,
-  profile,
+  navModal,
 } from './styles/navigationStyle'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -41,7 +41,7 @@ const NavIcon = () => {
       />
 
       {isProfileOpen && (
-        <div className={profile}>
+        <div className={navModal}>
           <Link href='/'>Profile</Link>
           <div className='mt-2 cursor-pointer'>Logout</div>
         </div>

@@ -26,8 +26,11 @@ export const searchInput = 'flex-1 bg-transparent outline-none py-1'
 
 export const navIcons = 'flex items-center gap-4 xl:gap-6 relative'
 
-export const profile =
+export const navModal =
   'absolute p-4 rounded-md top-12 left-0 text-sm shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-20'
+
+export const navCartModal =
+  'absolute p-4 rounded-md top-12 right-0 bg-white text-sm shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex flex-col gap-6 z-20'
 
 export const cartWrapper = 'relative cursor-pointer'
 
