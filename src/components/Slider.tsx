@@ -1,6 +1,9 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
+import { homepageContainer, homepageWrapper } from './styles/homepageStyle'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const slides = [
   {
@@ -30,7 +33,36 @@ const slides = [
 ]
 
 const Slider = () => {
-  return <div>Slider</div>
+  const [current, setCurrent] = useState(0)
+
+  return (
+    <div className={homepageContainer}>
+      <div className={homepageWrapper}>
+        {slides.map((slide) => (
+          <>
+            {/* TEXT CONTAINER */}
+            <div key={slide.id} className='w-1/2'>
+              <h2>{slide.description}</h2>
+              <h1>{slide.title}</h1>
+              <Link href={slide.url}>
+                <button>SHOP NOW</button>
+              </Link>
+            </div>
+            {/* IMAGE CONTAINER */}
+            <div key={slide.id} className='w-1/2 relative'>
+              <Image
+                src={slide.img}
+                alt={slide.title}
+                fill
+                sizes='100%'
+                className='object-cover'
+              />
+            </div>
+          </>
+        ))}
+      </div>
+    </div>
+  )
 }
 
 export default Slider
