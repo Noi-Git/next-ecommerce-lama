@@ -40,7 +40,8 @@ export const cartCount =
 export const leftMenuXl = 'hidden xl:flex gap-4'
 
 // === CART MODAL ===
-export const shopingcartWrapper = 'flex flex-col gap-8'
+export const shoppingCartTitle = 'text-xl'
+export const shoppingcartWrapper = 'flex flex-col gap-8'
 export const cartContainer = 'flex gap-4'
 export const cartImage = 'object-cover rounded-md'
 
@@ -53,3 +54,11 @@ export const cartTopSectionDescription = 'text-sm text-gray-500'
 export const cartBottomSectionCard = 'flex justify-between text-sm'
 export const cartBottomQuality = 'text-gray-500'
 export const cartBottomRemove = 'text-blue-500'
+export const cartBottomInfo = 'flex items-center justify-between font-semibold'
+export const cartBottomSubtotal = 'subTotal'
+export const cartBottomPricetotal = 'subTotal'
+export const cartBottomTextTitle = 'text-gray-500 text-sm mt-2 mb-4'
+export const cartBottomButtonWrapper = 'flex justify-between text-sm'
+export const cartBottomButtonView = 'rounded-md py-3 px-4 ring-1 ring-gray-300'
+export const cartBottomButtonCheckout =
+  'rounded-md py-3 px-4 bg-black text-white'
