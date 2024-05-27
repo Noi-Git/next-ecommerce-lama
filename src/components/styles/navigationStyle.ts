@@ -30,7 +30,7 @@ export const navModal =
   'absolute p-4 rounded-md top-12 left-0 text-sm shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-20'
 
 export const navCartModal =
-  'absolute p-4 rounded-md top-12 right-0 bg-white text-sm shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex flex-col gap-6 z-20'
+  'absolute p-4 rounded-md top-12 right-0 bg-white text-sm shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex flex-col gap-6 z-20  w-max'
 
 export const cartWrapper = 'relative cursor-pointer'
 
@@ -38,3 +38,18 @@ export const cartCount =
   'absolute -top-4 -right-4 w-6 h-6 bg-pink rounded-full text-white text-sm flex items-center justify-center'
 
 export const leftMenuXl = 'hidden xl:flex gap-4'
+
+// === CART MODAL ===
+export const shopingcartWrapper = 'flex flex-col gap-8'
+export const cartContainer = 'flex gap-4'
+export const cartImage = 'object-cover rounded-md'
+
+export const cartTopSection = 'flex flex-col justify-between w-full'
+export const cartTopSectionCard = 'flex items-center justify-between gap-8'
+export const cartTopSectionTitle = 'font-semibold'
+export const cartTopSectionPrice = 'p-1 bg-gray-50 rounded-sm'
+export const cartTopSectionDescription = 'text-sm text-gray-500'
+
+export const cartBottomSectionCard = 'flex justify-between text-sm'
+export const cartBottomQuality = 'text-gray-500'
+export const cartBottomRemove = 'text-blue-500'
