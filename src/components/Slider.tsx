@@ -10,6 +10,9 @@ import {
   homepageImageH2,
   homepageImageH1,
   homepageShopNowBtn,
+  sliceIndicatorContainer,
+  sliceIndicatorOuterDots,
+  sliceIndicatorInnerDots,
 } from './styles/homepageStyle'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -67,6 +70,22 @@ const Slider = () => {
                 className='object-cover'
               />
             </div>
+          </div>
+        ))}
+      </div>
+      <div className={sliceIndicatorContainer}>
+        {slides.map((slide, index) => (
+          <div
+            key={slide.id}
+            onClick={() => setCurrent(index)}
+            className={`${sliceIndicatorOuterDots} ${
+              current === index ? 'scale-150' : ''
+            }`}
+          >
+            {/* CREATE CIRCLE */}
+            {current === index && (
+              <div className={sliceIndicatorInnerDots}></div>
+            )}
           </div>
         ))}
       </div>
