@@ -13,11 +13,14 @@ export const menuLeft = 'w-1/3 xl:w-1/2 flex items-center gap-12'
 export const menuRight =
   'w-2/3 xl:w-1/2 flex items-center justify-between gap-4'
 
-export const textLogo = 'text-2xl tracking-wide text-pink pt-4 -ml-4'
+export const logoContainer = 'flex flex-row'
+
+export const textLogo =
+  'text-xl tracking-wide text-pink pt-5 ml-1 md:text-2xl md:pt-3 md:-ml-3'
+
+export const logo = 'flex items-center gap-3 mt-5 lg:mt-2'
 
 export const pointer = 'cursor-pointer'
-
-export const logo = 'flex items-center gap-3'
 
 export const searchForm =
   'flex items-center justify-between gap-4 bg-gray-100 p-2 rounded-md flex-1'

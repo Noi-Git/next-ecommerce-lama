@@ -1,7 +1,16 @@
 'use client'
 
 import React, { useState } from 'react'
-import { homepageContainer, homepageWrapper } from './styles/homepageStyle'
+import {
+  homepageContainer,
+  homepageWrapper,
+  homepageDisplay,
+  homepageTextContainer,
+  homepageImageContainer,
+  homepageImageH2,
+  homepageImageH1,
+  homepageShopNowBtn,
+} from './styles/homepageStyle'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -39,17 +48,17 @@ const Slider = () => {
     <div className={homepageContainer}>
       <div className={homepageWrapper}>
         {slides.map((slide) => (
-          <>
+          <div key={slide.id} className={`${slide.bg} ${homepageDisplay}`}>
             {/* TEXT CONTAINER */}
-            <div key={slide.id} className='w-1/2'>
-              <h2>{slide.description}</h2>
-              <h1>{slide.title}</h1>
+            <div className={homepageTextContainer}>
+              <h2 className={homepageImageH2}>{slide.description}</h2>
+              <h1 className={homepageImageH1}>{slide.title}</h1>
               <Link href={slide.url}>
-                <button>SHOP NOW</button>
+                <button className={homepageShopNowBtn}>SHOP NOW</button>
               </Link>
             </div>
             {/* IMAGE CONTAINER */}
-            <div key={slide.id} className='w-1/2 relative'>
+            <div className={homepageImageContainer}>
               <Image
                 src={slide.img}
                 alt={slide.title}
@@ -58,7 +67,7 @@ const Slider = () => {
                 className='object-cover'
               />
             </div>
-          </>
+          </div>
         ))}
       </div>
     </div>
