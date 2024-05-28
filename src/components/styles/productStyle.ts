@@ -1,3 +1,6 @@
+export const productSection = 'mt-24 px-4 md:px-9 lg:px-16 xl:px-32 2xl:px-64'
+export const productSectionHeading = 'text-2xl'
+
 export const productContainer =
   'flex gap-8 gap-y-16 justify-between flex-wrap mt-12'
 export const productCardLink =
