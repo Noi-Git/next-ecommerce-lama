@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   homepageContainer,
   homepageWrapper,
@@ -46,6 +46,15 @@ const slides = [
 
 const Slider = () => {
   const [current, setCurrent] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      //automatically loop through the carousel
+      setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1))
+    }, 3000)
+    //=== need to clear interval every time using interval
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <div className={homepageContainer}>
