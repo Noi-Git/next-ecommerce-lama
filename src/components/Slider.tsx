@@ -49,7 +49,10 @@ const Slider = () => {
 
   return (
     <div className={homepageContainer}>
-      <div className={homepageWrapper}>
+      <div
+        className={`${homepageWrapper}`}
+        style={{ transform: `translateX(-${current * 100}vw)` }}
+      >
         {slides.map((slide) => (
           <div key={slide.id} className={`${slide.bg} ${homepageDisplay}`}>
             {/* TEXT CONTAINER */}
