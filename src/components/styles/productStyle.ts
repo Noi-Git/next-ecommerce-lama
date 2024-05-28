@@ -1,5 +1,6 @@
 export const productSection = 'mt-24 px-4 md:px-9 lg:px-16 xl:px-32 2xl:px-64'
-export const productSectionHeading = 'text-2xl'
+export const productSectionHeading =
+  'text-2xl mb-12 px-4 md:px-9 lg:px-16 xl:px-32 2xl:px-64'
 export const categorySection = 'mt-24 '
 
 export const productContainer =

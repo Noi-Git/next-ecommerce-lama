@@ -11,7 +11,7 @@ import {
 
 const CategoryList = () => {
   return (
-    <div className={categoryContainer}>
+    <div className={`${categoryContainer} scrollbar-hide`}>
       <div className={categoryContainerWrapper}>
         <Link href='/list?cat=test' className={categoryLink}>
           <div className={categoryImageWrapper}>
