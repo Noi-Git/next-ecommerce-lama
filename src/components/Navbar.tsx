@@ -7,6 +7,7 @@ import {
   textLogo,
   logo,
   leftMenuXl,
+  logoContainer,
 } from '@/components/styles/navigationStyle'
 import Link from 'next/link'
 import Menu from './Menu'
@@ -19,7 +20,7 @@ const Navbar = () => {
     <div className={navbar}>
       {/* MOBILE */}
       <div className={navbarMobile}>
-        <Link href='/'>
+        <Link href='/' className={logoContainer}>
           <Image src='/heart.png' alt='face' width={45} height={45} />
           <div className={textLogo}>Noi</div>
         </Link>
