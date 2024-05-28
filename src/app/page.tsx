@@ -2,6 +2,7 @@ import CategoryList from '@/components/CategoryList'
 import ProductList from '@/components/ProductList'
 import Slider from '@/components/Slider'
 import {
+  categorySection,
   productSection,
   productSectionHeading,
 } from '@/components/styles/productStyle'
@@ -13,7 +14,7 @@ export default function Home() {
       <div className={productSection}>
         <h1 className={productSectionHeading}>Feature Products</h1>
         <ProductList />
-        <div className={productSection}>
+        <div className={categorySection}>
           <h1 className={productSectionHeading}>Categories</h1>
           <CategoryList />
         </div>
